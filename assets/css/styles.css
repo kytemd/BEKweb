@@ -1,0 +1,723 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Reenie+Beanie&display=swap');
+
+:root {
+    --header-height: 4rem;
+
+    --black-color: hsl(0, 0%, 0%);
+    --red-color: hsl(13, 100%, 14%);
+    --white-color: hsl(0, 0%, 100%);
+
+    --body-font: "Reenie Beanie", serif;
+    --heading-font: "Dawning of a New Day", cursive;
+    --h1-font-size: clamp(3.5rem, 7vw, 7rem);
+    --h2-font-size: clamp(3rem, 2.5vw, 2.5rem);
+    --h3-font-size: clamp(1.8rem, 1.8vw, 1.8rem);
+    --h4-font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+
+    --font-regular: 500;
+    --font-medium: 600;
+    --font-bold: 900;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+#main-content-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.bg-img {
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    z-index: -1;
+    pointer-events: none;
+    background-size: contain;
+    background-position: center;
+}
+
+#broccoli-bg-element {
+    background-image: url('BEK_broccoli.png');
+    top: 157.4vh;
+    left: 1vw;
+    width: 31.25vw;
+    height: 55.55vh;
+    transform: rotate(-30deg);
+}
+
+#chilli-bg-element {
+    background-image: url('BEK_chilli.png');
+    top: 297vh;
+    left: -2vw;
+    width: 30vw;
+    height: 30vh;
+    transform: rotate(50deg);
+}
+
+#eggplant-bg-element {
+    background-image: url('BEK_eggplant.png');
+    top: 150vh;
+    left: 55vw;
+    width: 70vw;
+    height: 40vh;
+    transform: rotate(35deg);
+}
+
+#garlic-bg-element {
+    background-image: url('BEK_garlic.png');
+    top: 215vh;
+    left: 2vw;
+    width: 23.43vw;
+    height: 41.66vh;
+    transform: rotate(50deg);
+}
+
+#lemon-bg-element {
+    background-image: url('BEK_lemon.png');
+    top: 340vh;
+    left: 70vw;
+    width: 23.43vw;
+    height: 41.66vh;
+    transform: rotate(-160deg);
+}
+
+#mushrooms-bg-element {
+    background-image: url('BEK_mushrooms.png');
+    top: 279.25vh;
+    left: 60vw;
+    width: 40vw;
+    height: 60.18vh;
+    transform: rotate(40deg);
+}
+
+#onion-bg-element {
+    background-image: url('BEK_onion.png');
+    top: 325vh;
+    left: 1vw;
+    width: 28.64vw;
+    height: 50.92vh;
+    transform: rotate(380deg);
+}
+
+#potato-bg-element {
+    background-image: url('BEK_potato.png');
+    top: 248vh;
+    left: -1vw;
+    width: 28.64vw;
+    height: 50.92vh;
+    transform: rotate(-15deg);
+}
+
+#tomato-bg-element {
+    background-image: url('BEK_tomato.png');
+    top: 185.18vh;
+    left: 70vw;
+    width: 28.64vw;
+    height: 50.92vh;
+    transform: rotate(-40deg);
+}
+
+#olives-bg-element {
+    background-image: url('BEK_olives.png');
+    top: 8.8vh;
+    left: 55vw;
+    width: 63vw;
+    height: 63vh;
+    transform: rotate(39deg);
+}
+
+#squash-bg-element {
+    background-image: url('BEK_squash.png');
+    top: 26vh;
+    left: -4.5vw;
+    width: 55vw;
+    height: 55vh;
+    transform: rotate(129deg);
+}
+
+#asparagus-bg-element {
+    background-image: url('BEK_asparagus.png');
+    top: 240vh;
+    left: 72vw;
+    width: 28.64vw;
+    height: 50.92vh;
+    transform: rotate(-120deg);
+}
+
+/* --- Menu Item Styling for Dot Leaders --- */
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-right: 1rem;
+}
+
+.menu-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-grow: 1;
+    gap: 1rem;
+    width: 100%;
+    position: relative;
+}
+
+.menu-text h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+}
+
+.item-name {
+    flex-grow: 1;
+    font-family: 'Reenie Beanie', serif;
+    font-size: var(--h4-font-size);
+    font-weight: lighter;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: left;
+    padding-right: 0.5em;
+    position: relative;
+}
+
+.item-name::after {
+    content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+}
+.item-price {
+    flex-shrink: 0; /* Prevents the price from shrinking, always takes its natural width */
+    font-family: var(--body-font); /* Your existing font */
+    font-size: var(--h4-font-size); /* Your existing size */
+    font-weight: lighter; /* Your existing weight */
+    text-align: right; /* Your existing alignment */
+    white-space: nowrap; /* Prevents price from wrapping */
+    padding-left: 0.5em; /* Small gap between dots and price */
+    flex-basis: 60px; /* NEW: Sets a consistent width for price elements. Adjust as needed. */
+    /* If 60px is too small for longer prices, increase it.
+       If you want them to be able to grow, use min-width: 60px; instead of flex-basis. */
+}
+
+#menu {
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+/* This .menu-item seems redundant with the one above, consolidate them if possible.
+   I've kept the most detailed one for the dot leaders. */
+/* .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: 2rem;
+} */
+
+.main-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto 4rem auto;
+    align-items: start;
+}
+
+.menu-section-group.menu-section-single-column {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-section-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 0;
+}
+
+.menu-column {
+    flex: 1 1 calc(50% - 1rem);
+    min-width: 280px;
+    padding: 0 1rem;
+    max-width: 450px;
+}
+
+.menu-column h4 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: var(--h4-font-size);
+    font-weight: var(--font-medium);
+    font-family: var(--heading-font);
+}
+
+html, body {
+    scroll-behavior: smooth;
+    height: 100%;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: 16px;
+    background-color: hsl(26, 100%, 97%);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    margin-inline: 1.5rem;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--red-color);
+    overflow: hidden;
+}
+
+.nav {
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    color: var(--white-color);
+    font-weight: var(--font-medium);
+    font-size: var(--h3-font-size);
+    z-index: var(--z-fixed) + 1;
+    font-family: var(--heading-font);
+}
+
+.nav__close,
+.nav__toggle {
+    display: flex;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: var(--z-fixed) + 1;
+}
+
+@media screen and (max-width: 1150px) {
+    .nav__menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background-color: var(--red-color);
+        width: 70%;
+        height: 100%;
+        padding: 4rem 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        transition: left 0.5s ease-in-out;
+        opacity: 98%;
+        z-index: var(--z-fixed);
+    }
+
+    .floating-img {
+        display: block;
+    }
+
+    .nav__menu.show-menu {
+        left: 0;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        row-gap: 5rem;
+    }
+
+    .nav__item {
+        transform: translateX(-150px);
+        visibility: hidden;
+        transition: transform .4s ease-out, visibility .4s;
+    }
+
+    .nav__menu.show-menu .nav__item {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    .nav__menu.show-menu .nav__item:nth-child(1) { transition-delay: .6s; }
+    .nav__menu.show-menu .nav__item:nth-child(2) { transition-delay: .5s; }
+    .nav__menu.show-menu .nav__item:nth-child(3) { transition-delay: .4s; }
+
+    .nav__link {
+        font-size: 40px;
+        font-family: var(--heading-font);
+        font-weight: var(--font-bold);
+        color: var(--white-color);
+        display: inline-flex;
+        align-items: center;
+        transition: opacity .4s;
+    }
+
+    .nav__link i {
+        display: none;
+    }
+
+    .nav__close {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+    }
+
+    .nav__social {
+        display: flex;
+        column-gap: 1rem;
+        margin-top: auto;
+    }
+
+    .nav__social-link {
+        color: var(--white-color);
+        font-size: 1.5rem;
+        transition: transform .4s;
+    }
+
+    .nav__social-link:hover {
+        transform: translateY(-.25rem);
+    }
+}
+
+@media screen and (min-width: 1151px) {
+    .nav {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    .nav__menu {
+        position: static;
+        background: none;
+        padding: 0;
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        opacity: 1;
+        z-index: auto;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: row;
+        column-gap: 3.5rem;
+        margin-right: 2rem;
+        align-items: center;
+    }
+
+    .nav__item {
+        visibility: visible;
+        transform: translateX(0);
+        transition: none;
+    }
+
+    .nav__link {
+        font-size: 1.5rem;
+        font-family: var(--heading-font);
+        padding: 0.5rem 0;
+        color: var(--white-color);
+        transition: color 0.3s ease;
+        display: block;
+        font-weight: var(--font-medium);
+    }
+
+    .nav__link:hover {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .nav__link span {
+        position: relative;
+        transition: none;
+    }
+
+    .nav__link span::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background-color: var(--white-color);
+        transition: width .4s ease-out;
+    }
+
+    .nav__link:hover span::after {
+        width: 100%;
+    }
+
+    .nav__social {
+        display: flex;
+        column-gap: 1rem;
+    }
+
+    .nav__social-link {
+        font-size: 1.25rem;
+        color: var(--white-color);
+    }
+
+    .nav__toggle,
+    .nav__close {
+        display: none;
+    }
+
+    .nav__list:has(.nav__link:hover) .nav__link:not(:hover) {
+        opacity: .7;
+    }
+}
+
+main {
+    display: block;
+    height: auto;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: auto;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: calc(var(--header-height) + 2rem);
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+#home {
+    padding-top: calc(var(--header-height) + 12.5rem);
+}
+
+#menu {
+    margin-top: -20rem;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-margin-top: -45rem;
+}
+
+#location-and-hour {
+    padding-top: calc(var(--header-height) + 6rem);
+    /* There's a negative padding-bottom here, which isn't typically recommended as it can lead to unexpected layout issues.
+       If you're trying to reduce space, consider adjusting margin-bottom or height instead. */
+    padding-bottom: -5rem;
+    scroll-margin-top: -14rem;
+    left: 1rem;
+}
+
+.location-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    width: 100%;
+    max-width: 1120px;
+    padding: 2rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.location-text {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.location-text h1,
+.location-text p {
+    text-align: left;
+}
+
+.map-container {
+    flex: 2;
+    min-width: 350px;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .location-content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .location-text {
+        min-width: unset;
+        width: 100%;
+        text-align: center;
+    }
+
+    .location-text h1,
+    .location-text p {
+        text-align: center;
+    }
+
+    .map-container {
+        min-width: unset;
+        width: 100%;
+        height: 60vh;
+    }
+}
+
+.paragraph-section {
+    padding: 0rem;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .paragraph-section {
+        padding: 1rem 1rem;
+    }
+
+    /* This padding on map-container with a negative value is very unusual and likely problematic.
+       Consider using margin or adjusting height for spacing instead. */
+    .map-container {
+        height: 90vh;
+        padding: -40rem;
+    }
+}
+
+.paragraph-section h1 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-medium);
+    line-height: 1.2;
+    color: var(--black-color);
+    font-family: var(--heading-font);
+    margin-bottom: 1rem;
+}
+
+.paragraph-section h2 {
+    font-size: var(--h2-font-size);
+    font-weight: normal;
+    line-height: 1.3;
+    color: var(--black-color);
+    font-family: var(--heading-font);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.paragraph-section p {
+    font-size: var(--h3-font-size);
+    font-weight: lighter;
+    line-height: 1.5;
+    color: var(--black-color);
+    font-family: var(--body-font);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.map-container {
+    height: 80vh;
+    width: 190%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.map-container iframe {
+    width: 150%;
+    height: 150%;
+    max-width: 900px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .map-container {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 84px; /* This font-size seems very large for a small screen. Double-check if this is intentional. */
+    }
+
+    .nav {
+        height: calc(var(--header-height) + 0.5rem);
+    }
+
+    .nav__menu {
+        width: 80%;
+        padding: 3rem 1.5rem;
+    }
+
+    .nav__item {
+        transform: translateX(-100px);
+    }
+
+    .nav__link {
+        font-size: 1.75rem;
+    }
+}
