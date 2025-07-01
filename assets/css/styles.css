@@ -29,7 +29,7 @@ h4 {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .bg-img {
@@ -125,17 +125,17 @@ h4 {
 
 #squash-bg-element {
     background-image: url('BEK_squash.png');
-    top: 19vh;
-    left: -.3vw;
+    top: 47vh;
+    left: 41.9vw;
     width: 55vw;
     height: 63vh;
-    transform: rotate(140deg);
+    transform: rotate(40deg);
 }
 
 #olives-bg-element {
     background-image: url('BEK_olives.png');
     top: 8.8vh;
-    left: 47vw;
+    left: -28vw;
     width: 80vw;
     height: 70vh;
     transform: rotate(40deg);
@@ -149,6 +149,222 @@ h4 {
     height: 50.92vh;
     transform: rotate(-120deg);
 }
+
+@media screen and (max-width: 768px) {
+    .bg-img {
+        opacity: 0.25; 
+    }
+
+    #broccoli-bg-element {
+        top: 120vh;
+        left: -5vw;
+        width: 45vw; 
+        height: 80vh;
+        transform: rotate(-15deg);
+    }
+
+    #chilli-bg-element {
+        top: 250vh;
+        left: 45vw;
+        width: 40vw;
+        height: 40vh;
+        transform: rotate(20deg);
+    }
+
+    #eggplant-bg-element {
+        top: 140vh;
+        left: 30vw; 
+        width: 80vw; 
+        height: 50vh;
+        transform: rotate(15deg);
+    }
+
+    #garlic-bg-element {
+        top: 200vh;
+        left: -3vw;
+        width: 35vw;
+        height: 60vh;
+        transform: rotate(30deg);
+    }
+
+    #lemon-bg-element {
+        top: 300vh;
+        left: 55vw;
+        width: 35vw;
+        height: 60vh;
+        transform: rotate(-100deg);
+    }
+
+    #mushrooms-bg-element {
+        top: 260vh;
+        left: 50vw;
+        width: 50vw;
+        height: 70vh;
+        transform: rotate(25deg);
+    }
+
+    #onion-bg-element {
+        top: 280vh;
+        left: -2vw;
+        width: 40vw;
+        height: 70vh;
+        transform: rotate(300deg); 
+    }
+
+    #potato-bg-element {
+        top: 220vh;
+        left: 5vw;
+        width: 40vw;
+        height: 70vh;
+        transform: rotate(-5deg);
+    }
+
+    #tomato-bg-element {
+        top: 160vh;
+        left: 50vw;
+        width: 40vw;
+        height: 70vh;
+        transform: rotate(-20deg);
+    }
+
+    #squash-bg-element {
+    top: 47vh;
+    left: 41.9vw;
+    width: 55vw;
+    height: 63vh;
+    transform: rotate(40deg);
+    }
+
+    #olives-bg-element {
+    top: 8.8vh;
+    left: -28vw;
+    width: 80vw;
+    height: 70vh;
+    transform: rotate(40deg);
+    }
+
+    #asparagus-bg-element {
+        top: 230vh;
+        left: 60vw;
+        width: 40vw;
+        height: 70vh;
+        transform: rotate(-90deg);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bg-img {
+        opacity: 0.15; 
+    }
+
+    #broccoli-bg-element {
+        top: 100vh;
+        left: -15vw;
+        width: 60vw;
+        height: 90vh;
+        transform: rotate(-5deg);
+    }
+
+    #chilli-bg-element {
+        top: 220vh;
+        left: 20vw;
+        width: 60vw;
+        height: 60vh;
+        transform: rotate(10deg);
+    }
+
+    #eggplant-bg-element {
+        top: 120vh;
+        left: 10vw;
+        width: 90vw;
+        height: 60vh;
+        transform: rotate(5deg);
+    }
+
+    #garlic-bg-element {
+        top: 180vh;
+        left: -10vw;
+        width: 50vw;
+        height: 80vh;
+        transform: rotate(15deg);
+    }
+
+    #lemon-bg-element {
+        top: 280vh;
+        left: 30vw;
+        width: 50vw;
+        height: 80vh;
+        transform: rotate(-60deg);
+    }
+
+    #mushrooms-bg-element {
+        top: 240vh;
+        left: 25vw;
+        width: 70vw;
+        height: 90vh;
+        transform: rotate(15deg);
+    }
+
+    #onion-bg-element {
+        top: 260vh;
+        left: -5vw;
+        width: 50vw;
+        height: 90vh;
+        transform: rotate(280deg);
+    }
+
+    #potato-bg-element {
+        top: 200vh;
+        left: 0vw;
+        width: 50vw;
+        height: 90vh;
+        transform: rotate(0deg);
+    }
+
+    #tomato-bg-element {
+        top: 140vh;
+        left: 30vw;
+        width: 50vw;
+        height: 90vh;
+        transform: rotate(-10deg);
+    }
+
+    #squash-bg-element {
+    top: 47vh;
+    left: 41.9vw;
+    width: 55vw;
+    height: 63vh;
+    transform: rotate(40deg);
+    }
+
+    #olives-bg-element {
+    top: 8.8vh;
+    left: -28vw;
+    width: 80vw;
+    height: 70vh;
+    transform: rotate(40deg);
+    }
+    
+    #asparagus-bg-element {
+        top: 210vh;
+        left: 40vw;
+        width: 50vw;
+        height: 90vh;
+        transform: rotate(-45deg);
+    }
+
+    body {
+        font-size: 14px; 
+    }
+
+    :root {
+        --h1-font-size: clamp(2.5rem, 10vw, 5rem); 
+        --h2-font-size: clamp(2rem, 5vw, 3rem);
+        --h3-font-size: clamp(1.5rem, 4vw, 2rem);
+        --h4-font-size: clamp(1rem, 3vw, 1.5rem); 
+    }
+}
+
 
 
 .menu-item {
@@ -195,17 +411,17 @@ h4 {
 }
 
 .item-name::after {
-    content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+    content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
 }
 .item-price {
-    flex-shrink: 0; 
-    font-family: var(--body-font); 
-    font-size: var(--h4-font-size); 
+    flex-shrink: 0;
+    font-family: var(--body-font);
+    font-size: var(--h4-font-size);
     font-weight: lighter;
-    text-align: right; 
-    white-space: nowrap; 
-    padding-left: 0.5em; 
-    flex-basis: 60px; 
+    text-align: right;
+    white-space: nowrap;
+    padding-left: 0.5em;
+    flex-basis: 60px;
 }
 
 #menu {
@@ -258,7 +474,7 @@ h4 {
 html, body {
     scroll-behavior: smooth;
     height: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden; 
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -308,7 +524,7 @@ a {
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--red-color);
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .nav {
@@ -354,7 +570,7 @@ a {
     }
 
     .floating-img {
-        display: block;
+        display: block; 
     }
 
     .nav__menu.show-menu {
@@ -509,7 +725,7 @@ a {
 main {
     display: block;
     height: auto;
-    overflow-y: visible;
+    overflow-y: visible; 
     -webkit-overflow-scrolling: auto;
 }
 
@@ -532,20 +748,20 @@ section {
 }
 
 #menu {
-    margin-top: -20rem;
+    margin-top: -20rem; 
     height: auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    scroll-margin-top: -45rem;
+    scroll-margin-top: -45rem; 
 }
 
 #location-and-hour {
     padding-top: calc(var(--header-height) + 6rem);
-    padding-bottom: -5rem;
+    padding-bottom: -5rem; 
     scroll-margin-top: -14rem;
-    left: 1rem;
+    left: 1rem; 
 }
 
 .location-content-wrapper {
@@ -622,8 +838,8 @@ section {
     }
 
     .map-container {
-        height: 90vh;
-        padding: -40rem;
+        height: 60vh; 
+        padding: 0; 
     }
 }
 
@@ -658,7 +874,7 @@ section {
 
 .map-container {
     height: 80vh;
-    width: 190%;
+    width: 190%; 
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -678,12 +894,18 @@ section {
 @media screen and (max-width: 768px) {
     .map-container {
         height: 60vh;
+        width: 100%; 
+        padding: 0;
+    }
+    .map-container iframe {
+        width: 100%; 
+        height: 100%;
     }
 }
 
 @media screen and (max-width: 480px) {
     body {
-        font-size: 84px; 
+        font-size: 14px;
     }
 
     .nav {
@@ -700,6 +922,25 @@ section {
     }
 
     .nav__link {
-        font-size: 1.75rem;
+        font-size: 1.75rem; 
+    }
+
+    :root {
+        --h1-font-size: clamp(2rem, 9vw, 4rem);
+        --h2-font-size: clamp(1.8rem, 4.5vw, 2.5rem);
+        --h3-font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+        --h4-font-size: clamp(0.9rem, 2.8vw, 1.2rem);
+    }
+
+    .main-menu-grid {
+        grid-template-columns: 1fr; 
+        gap: 1rem;
+    }
+
+    .menu-column {
+        flex: auto;
+        min-width: unset; 
+        max-width: 100%;
+        padding: 0 0.5rem;
     }
 }
